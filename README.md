@@ -1,33 +1,90 @@
-# React + TypeScript + Vite
+# Candidate search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Candidate search is a professional web application tailored for recruiters and hiring managers to identify potential software developers by leveraging GitHub's API. By utilizing a private GitHub API token, users can efficiently explore developer profiles, save qualified candidates, and manage their selection process with ease.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+Table of contents to make it easy for users to find what they need:
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Features](#features)
+- [Questions](#questions)
 
-* Configure the top-level `parserOptions` property as follows:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Prerequisites:
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+Ensure you have the following installed:
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+-Node.js
+
+-GitHub Personal Access Token
+
+Set Up:
+
+1. Clone the Repo: 
+
+git clone https://github.com/Beazzty/Candidate-search.git
+
+2. Navigate to the project folder:
+
+cd Develop
+
+3. Install dependencies:
+
+npm i
+
+4. Create a .env file in the root directory and add your GitHub API token:
+
+VITE_GITHUB_TOKEN=ACCESS_TOKEN_HERE
+
+5. Start the developement server:
+
+npm run dev
+
+## Usage
+
+-Open the app in your browser (http://localhost:5173/ by default).
+
+
+
+-View developer profiles fetched from GitHub.
+
+
+
+-Use the green plus (+) button to save a candidate.
+
+-Use the red minus (-) button to skip a candidate.
+
+-When the user has gone through all available candidates, it will display that there are no new candidates to view
+
+
+
+-Navigate to the Potential Candidates page to review saved developers.
+
+-Click the Remove button to discard a saved candidate if necessary.
+
+## Credits
+
+-Also used Xpert Learning Assistance and ChatGBT to assist me in answering any questions I had throughout this project.
+
+## Features
+
+-Browse Developers: Fetch potential software developers' information from GitHub.
+
+-View Candidate Profiles: Access key details such as name, username, avatar, email, company, GitHub URL, and location.
+
+-Save Candidates: Click the green plus (+) button to add a developer to the "Potential Candidates" page.
+
+-Reject Candidates: Click the red minus (-) button to dismiss a developer and move to the next profile.
+
+-Manage Potential Candidates: View saved candidates on a dedicated page and remove them if necessary.
+
+## Questions
+
+If you have any questions, please reach out to me at [quinnbrown2004@gmail.com].
+You can find more of my work at [Github.com/Beazzty](https://github.com/Github.com/Beazzty).
